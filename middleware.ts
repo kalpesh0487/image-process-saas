@@ -10,7 +10,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { clerkMiddleware, ClerkMiddlewareOptions } from '@clerk/nextjs/server';
 
-const publicRoutes = ['/api/webhooks/clerk'];
+const publicRoutes = ['/','/api/webhooks/clerk', '/api/webhooks/stripe'];
 
 const clerkOptions: ClerkMiddlewareOptions = {
   // Include any other options you need for clerkMiddleware here
